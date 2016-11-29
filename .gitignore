@@ -51,3 +51,4 @@ bin/
 obj/
 *.suo
 *.vs
+*.Cache
