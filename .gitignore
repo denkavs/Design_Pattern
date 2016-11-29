@@ -49,6 +49,7 @@ Temporary Items
 # Project folders and files
 bin/
 obj/
+*.vs/
 *.suo
 *.vs
 *.Cache
