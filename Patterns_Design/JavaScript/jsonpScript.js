@@ -1,0 +1,1 @@
+﻿processDataFromThirdPartServer({ name: 'Ivan Grozny' });

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CD80E81-D82D-4ED6-9C28-EDD1241C8EBD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Patterns_Design</RootNamespace>
+    <AssemblyName>Patterns_Design</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavioral\ChainOfResponsibility\ButtonChain.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\DialogChain.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Handler.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\IRequest.cs" />
+    <Compile Include="Behavioral\Command\ICommand.cs" />
+    <Compile Include="Behavioral\Command\OpenCommand.cs" />
+    <Compile Include="Behavioral\Command\PasteCommand.cs" />
+    <Compile Include="Behavioral\Command\Receiver1.cs" />
+    <Compile Include="Behavioral\Command\Reciever2.cs" />
+    <Compile Include="Behavioral\Command\SourceCommand.cs" />
+    <Compile Include="Behavioral\Command\TemplatedCommand.cs" />
+    <Compile Include="Behavioral\Command\TemplatedSourceCommand.cs" />
+    <Compile Include="Behavioral\Interpreter\AndExp.cs" />
+    <Compile Include="Behavioral\Interpreter\BooleanConstant.cs" />
+    <Compile Include="Behavioral\Interpreter\BooleanContext.cs" />
+    <Compile Include="Behavioral\Interpreter\BooleanExp.cs" />
+    <Compile Include="Behavioral\Interpreter\Context.cs" />
+    <Compile Include="Behavioral\Interpreter\Expression.cs" />
+    <Compile Include="Behavioral\Interpreter\NotExp.cs" />
+    <Compile Include="Behavioral\Interpreter\OrExp.cs" />
+    <Compile Include="Behavioral\Interpreter\VariableExp.cs" />
+    <Compile Include="Behavioral\Iterator\Aggregate.cs" />
+    <Compile Include="Behavioral\Iterator\ConcreteAggregate.cs" />
+    <Compile Include="Behavioral\Iterator\ConcreteIterator.cs" />
+    <Compile Include="Behavioral\Iterator\Iterator.cs" />
+    <Compile Include="Behavioral\Mediator\Collegue1.cs" />
+    <Compile Include="Behavioral\Mediator\Collegue2.cs" />
+    <Compile Include="Behavioral\Mediator\Collegue3.cs" />
+    <Compile Include="Behavioral\Mediator\ConcreteMediator.cs" />
+    <Compile Include="Behavioral\Memento\Memento.cs" />
+    <Compile Include="Behavioral\Memento\ProspectMemory.cs" />
+    <Compile Include="Behavioral\Memento\SalesProspect.cs" />
+    <Compile Include="Behavioral\Observer\ConcreteObserver1.cs" />
+    <Compile Include="Behavioral\Observer\ConcreteObserver2.cs" />
+    <Compile Include="Behavioral\Observer\Subject.cs" />
+    <Compile Include="Behavioral\State\Account.cs" />
+    <Compile Include="Behavioral\State\GoldState.cs" />
+    <Compile Include="Behavioral\State\RedState.cs" />
+    <Compile Include="Behavioral\State\SilverState.cs" />
+    <Compile Include="Behavioral\State\State.cs" />
+    <Compile Include="Behavioral\Strategy_Policy\ConcreteStrategy.cs" />
+    <Compile Include="Behavioral\Strategy_Policy\IStrategy.cs" />
+    <Compile Include="Behavioral\Strategy_Policy\StrategyContext.cs" />
+    <Compile Include="Behavioral\Template Method\ConcreteTemplateMethodClass1.cs" />
+    <Compile Include="Behavioral\Template Method\TemplateMethodClass.cs" />
+    <Compile Include="Behavioral\UnitOfWork\BaseEntity.cs" />
+    <Compile Include="Behavioral\UnitOfWork\Course.cs" />
+    <Compile Include="Behavioral\UnitOfWork\DbSet.cs" />
+    <Compile Include="Behavioral\UnitOfWork\GenericRepository.cs" />
+    <Compile Include="Behavioral\UnitOfWork\IStudentRepository.cs" />
+    <Compile Include="Behavioral\UnitOfWork\SchoolContext.cs" />
+    <Compile Include="Behavioral\UnitOfWork\Student.cs" />
+    <Compile Include="Behavioral\UnitOfWork\StudentController.cs" />
+    <Compile Include="Behavioral\UnitOfWork\StudentRepository.cs" />
+    <Compile Include="Behavioral\UnitOfWork\UnitOfWork.cs" />
+    <Compile Include="Behavioral\Visitor\ConcreteNodeVisitor.cs" />
+    <Compile Include="Behavioral\Visitor\INode.cs" />
+    <Compile Include="Behavioral\Visitor\NodeType1.cs" />
+    <Compile Include="Behavioral\Visitor\NodeType2.cs" />
+    <Compile Include="Behavioral\Visitor\NodeVisitor.cs" />
+    <Compile Include="Creation\AbstractFactory\IWidgetButton.cs" />
+    <Compile Include="Creation\AbstractFactory\IWidgetDialog.cs" />
+    <Compile Include="Creation\AbstractFactory\IWidgetFactory.cs" />
+    <Compile Include="Creation\AbstractFactory\MotifWidgetFactory.cs" />
+    <Compile Include="Creation\AbstractFactory\PMButton.cs" />
+    <Compile Include="Creation\AbstractFactory\PmDialog.cs" />
+    <Compile Include="Creation\AbstractFactory\PMWidgetFactory.cs" />
+    <Compile Include="Creation\Builder\CarBuilder.cs" />
+    <Compile Include="Creation\Builder\IVehicleBuilder.cs" />
+    <Compile Include="Creation\Builder\MotoByke.cs" />
+    <Compile Include="Creation\Builder\Shop.cs" />
+    <Compile Include="Creation\Builder\VeloByke.cs" />
+    <Compile Include="Creation\FactoryMethod_VirtualConstructor\ConcreteCreator.cs" />
+    <Compile Include="Creation\FactoryMethod_VirtualConstructor\ConcreteIaMethodDocument.cs" />
+    <Compile Include="Creation\FactoryMethod_VirtualConstructor\Creator.cs" />
+    <Compile Include="Creation\FactoryMethod_VirtualConstructor\IAMethodDocument.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Facade\Facade.cs" />
+    <Compile Include="Structural\Flyweight\Character.cs" />
+    <Compile Include="Structural\Flyweight\CharacterFactory.cs" />
+    <Compile Include="Structural\Flyweight\ConcreteCharacters.cs" />
+    <Compile Include="Structural\Money\Money.cs" />
+    <Compile Include="Structural\Money\MoneyPattern.cs" />
+    <Compile Include="Structural\Proxy\IImage.cs" />
+    <Compile Include="Structural\Proxy\ProxyImage.cs" />
+    <Compile Include="Structural\Proxy\RealImage.cs" />
+    <Compile Include="ThreadTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JavaScript\CodeReusePattern.js" />
+    <Content Include="JavaScript\iframeServer.html" />
+    <Content Include="JavaScript\imgBeaconScript.js" />
+    <Content Include="JavaScript\jsonpScript.js" />
+    <Content Include="JavaScript\js\jasmine-html.js" />
+    <Content Include="JavaScript\js\jasmine.js" />
+    <Content Include="JavaScript\LoadingStrategies.js" />
+    <Content Include="JavaScript\ObjectCreationPattern.js" />
+    <Content Include="JavaScript\PatternsPage.html" />
+    <Content Include="JavaScript\Patterns.js" />
+    <Content Include="JavaScript\Sort_Algoritms.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

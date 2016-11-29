@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>I am a programmer...</div>
+    <div id="headerContent"><p>Header content</p></div>
+    <div id="contentContent">
+        <p>Content content</p>
+        <button class="jsonp">Make jsonp</button>
+        <button class="imagebeacon">Make img beacon</button>
+        <button class="iframe">Make iframe</button>
+        <a href="iframeServer.html" target="RSIFrame">make RPC call</a>
+    </div>
+    <!--<iframe id="RSIFrame"
+            name="RSIFrame"
+            ></iframe>-->
+    <!--style="width:0px; height:0px; border: 0px"-->
+
+    <div id="footerContent"><p>Footer content</p></div>
+    <script type="text/javascript" src="LoadingStrategies.js"></script>
+    <script>
+        function handleResponse(msg, doc) {
+            alert('this function is called from server.html -- ' + msg);
+        }
+    </script>
+</body>
+</html>
