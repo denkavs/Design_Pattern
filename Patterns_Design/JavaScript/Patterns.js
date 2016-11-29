@@ -12,6 +12,8 @@ describe('Patterns ->', function () {
     describe('-- Scope chain', function () {
         it('/ way 1', function () {
 
+            var el = document.getElementById('e');
+            el.innerHTML = "dd";
             var counterArray = {
                 A: 3,
                 B: 4
